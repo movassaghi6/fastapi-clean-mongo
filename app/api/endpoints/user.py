@@ -68,7 +68,7 @@ def delete_user_by_id(
     return userId
 
 
-@router.put(
+@router.patch(
     '/users/{userId}',
     status_code=HTTP_200_OK,
     response_description='update user',

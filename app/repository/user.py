@@ -61,10 +61,22 @@ class UserRepository(BaseRepository):
 
 
         request_in_json = jsonable_encoder(req)
+        print(request_in_json)
 
-        update_model = self.database[collection].update_one(filter= {'_id': id}, update={ "$set": request_in_json } )
-        updated_model = self.database[collection].find_one({"_id": id})
+        def remove_pairs_with_none_in_place(d):
+            pairs_with_none = {k: v for k, v in d.items() if v is None}
+            for key in pairs_with_none.keys():
+                del d[key]
+            return pairs_with_none
 
-        return User(**updated_model)
+        if req == None:
+            updated_model = self.database[collection].find_one({"_id": id})
+            return User(**updated_model)
+
+        else:
+            remove_pairs_with_none_in_place(request_in_json)
+            update_model = self.database[collection].update_one(filter={'_id': id}, update={"$set": request_in_json})
+            updated_model = self.database[collection].find_one({"_id": id})
+            return User(**updated_model)
 
 

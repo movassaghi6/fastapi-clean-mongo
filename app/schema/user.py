@@ -25,9 +25,9 @@ class DeleteUserResponse(BaseModel):
     user_id: str
 
 class UpdateUserRequest(BaseModel):
-    email: str
-    name: str
-    password: str
+    email: str |  None = None
+    name: str | None = None
+    password: str | None = None
 
 class UpdateUserResponse(BaseModel):
     user_id:  str
