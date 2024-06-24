@@ -6,12 +6,12 @@ from app.api.endpoints import user as user_router
 
 router = APIRouter()
 
-router.include_router(user_router.router, tags=['USER V1'], prefix='/v1')
+router.include_router(user_router.router, tags=['USER V1'], prefix='/api/v1')
 
 
 
 @router.get(
-    '/v1/hello',
+    '/api/v1/hello',
     name= 'probe:liveness'
 )
 def hello_world(request: Request):
