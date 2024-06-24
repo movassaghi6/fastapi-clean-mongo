@@ -32,7 +32,8 @@ def get_application() -> FastAPI:
     application.include_router(api_router)
 
     application.add_middleware(
-        CORSMiddleware, allow_origins=ALLOWED_HOSTS or ['*'],
+        CORSMiddleware,
+        allow_origins=ALLOWED_HOSTS or ['*'],
         allow_credentials=True,
         allow_methods=['*'],
         allow_headers=['*'],

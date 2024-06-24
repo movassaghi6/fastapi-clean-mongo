@@ -1,8 +1,6 @@
-from datetime import datetime
-from pydantic import BaseModel, Field, EmailStr
-from typing import Optional
+from pydantic import BaseModel, Field
 from bson import ObjectId
-
+from datetime import datetime, timezone
 
 
 class PyObjectId(ObjectId):
@@ -24,17 +22,17 @@ class PyObjectId(ObjectId):
 
 
 class User(BaseModel):
-    id: Optional[PyObjectId] = Field(default_factory=PyObjectId, alias="_id")
-    email: EmailStr = Field(unique=True)
+    id: PyObjectId = Field(default_factory=PyObjectId, alias="_id")
+    email: str = Field(unique=True)
     password: str
     name: str = Field(...)
-    created_at: datetime
+    created_at: datetime = Field(default_factory=lambda: datetime.now(timezone.utc))
+
 
     class Config:
         allow_population_by_field_name = True
         arbitrary_types_allowed = True
         json_encoders = {ObjectId: str}
-
 
 
 
