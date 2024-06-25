@@ -1,7 +1,7 @@
 # FastAPI-Clean-Mongo
 
 base Fastapi project with mongodb as the database for RestAPI applications
-!(https://github.com/movassaghi6/fastapi-clean-mongo/blob/main/docs.png)
+![image of docs](https://github.com/movassaghi6/fastapi-clean-mongo/blob/main/docs.png)
 
 ## Table of Contents
 
