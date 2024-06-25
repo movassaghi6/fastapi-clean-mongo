@@ -61,14 +61,6 @@ base Fastapi project with mongodb as the database for RestAPI applications
 ### 
 
 ### Description
-
-- **api/**: Contains the FastAPI application with routes and endpoints.
-- **core/**: Business logic and use cases.
-- **model/**: Database models for MongoDB.
-- **repository/**: Data access layer, including interaction with the database.
-- **schema/**: Request and response schemas for API endpoints.
-- **tests/**: Unit and integration tests.
-
 Clean Architecture, proposed by Robert C. Martin (Uncle Bob), aims to separate the concerns of an application into distinct layers. This helps in creating a system that is both flexible and maintainable. Here's a breakdown of how the folders you mentioned typically relate to the layers in Clean Architecture:
 
 - **API**: Interface Adapters (Delivery Mechanism)
