@@ -1,6 +1,6 @@
 # FastAPI-Clean-Mongo
 
-base Fastapi project with mongodb as the database for RestAPI applications
+base Fastapi project with mongodb as the database for RestAPI applications and dependencies injected using FastAPI's Dependency Injection System.
 ![image of docs](https://github.com/movassaghi6/fastapi-clean-mongo/blob/main/docs.png)
 
 ## Table of Contents
