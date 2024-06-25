@@ -5,8 +5,8 @@ base Fastapi project with mongodb as the database for RestAPI applications
 
 ## Table of Contents
 
-- [Features](##Features)
-- [Installation](##Installation)
+- [Features](#Features)
+- [Installation](#Installation)
 - [Usage](https://www.notion.so/re-b39773b9a6994ba08627024ac12c20b0?pvs=21)
 - [Project Structure](https://www.notion.so/re-b39773b9a6994ba08627024ac12c20b0?pvs=21)
 - [Contributing](https://www.notion.so/re-b39773b9a6994ba08627024ac12c20b0?pvs=21)
