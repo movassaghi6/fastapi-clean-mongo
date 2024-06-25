@@ -80,8 +80,8 @@ This structure maintains a clean separation of concerns:
 
 - [ ] complete Tests
 
-[] implement Authentication
+- [ ] implement Authentication
 
-[] logging system
+- [ ] logging system
 
-[] cache system
+- [ ] cache system
