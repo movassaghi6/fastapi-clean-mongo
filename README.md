@@ -7,10 +7,9 @@ base Fastapi project with mongodb as the database for RestAPI applications
 
 - [Features](#Features)
 - [Installation](#Installation)
-- [Usage](https://www.notion.so/re-b39773b9a6994ba08627024ac12c20b0?pvs=21)
-- [Project Structure](https://www.notion.so/re-b39773b9a6994ba08627024ac12c20b0?pvs=21)
-- [Contributing](https://www.notion.so/re-b39773b9a6994ba08627024ac12c20b0?pvs=21)
-- [License](https://www.notion.so/re-b39773b9a6994ba08627024ac12c20b0?pvs=21)
+- [Description](#Description)
+- [ToDo](#ToDo)
+
 
 ## Features
 
@@ -60,7 +59,7 @@ base Fastapi project with mongodb as the database for RestAPI applications
 
 ### 
 
-### Description
+## Description
 Clean Architecture, proposed by Robert C. Martin (Uncle Bob), aims to separate the concerns of an application into distinct layers. This helps in creating a system that is both flexible and maintainable. Here's a breakdown of how the folders you mentioned typically relate to the layers in Clean Architecture:
 
 - **API**: Interface Adapters (Delivery Mechanism)
@@ -77,7 +76,7 @@ This structure maintains a clean separation of concerns:
 - **Repository** manages data access and manipulation.
 - **Schema** defines the data formats for communication with the database.
 
-### ToDo:
+## ToDo:
 
 complete Tests
 
