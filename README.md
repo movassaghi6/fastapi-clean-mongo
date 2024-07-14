@@ -6,10 +6,10 @@ base Fastapi project with mongodb as the database for RestAPI applications
 
 ## Table of Contents
 
-- [Features](## Features)
-- [Installation](##Installation)
-- [Description](##Description)
-- [ToDo](##ToDo)
+- [Features](#Features)
+- [Installation](#Installation)
+- [Description](#Description)
+- [ToDo](#ToDo)
 
 
 
