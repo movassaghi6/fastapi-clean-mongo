@@ -22,7 +22,9 @@ base Fastapi project with mongodb as the database for RestAPI applications
 
 ## Installation
 
-### Prerequisites
+### Installation using poetry
+
+#### Prerequisites
 
 - Python 3.12
 - FastAPI
@@ -31,7 +33,7 @@ base Fastapi project with mongodb as the database for RestAPI applications
 - Pymongo
 - Poetry
 
-### Steps
+#### Steps
 
 1. **Clone the repository**:
     
@@ -54,6 +56,36 @@ base Fastapi project with mongodb as the database for RestAPI applications
     poetry run uvicorn api.main:app --reload
     
     ```
+
+### Installation using docker
+
+#### Prerequisites
+- Docker
+- Docker Compose
+
+#### Steps
+
+1. **Clone the repository**:
+
+    ```
+    git clone https://github.com/your-username/your-repo.git
+    cd your-repo
+    ```
+
+2. **Build and run the Docker containers using Docker Compose**:
+
+    ```
+    docker-compose up --build
+    ```
+
+This command will:
+- Build the Docker image for your FastAPI application.
+- Start the FastAPI application in a container.
+- Start MongoDB in another container.
+
+3. **Access the application**:
+
+    Open your web browser and go to `http://localhost:8000`.
     
 
 ## Description
