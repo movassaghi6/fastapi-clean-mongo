@@ -34,7 +34,6 @@ base Fastapi project with mongodb as the database for RestAPI applications
 1. **Clone the repository**:
     
     ```
-    shCopy 
     git clone https://github.com/your-username/your-repo.git
     cd your-repo
     
@@ -43,7 +42,6 @@ base Fastapi project with mongodb as the database for RestAPI applications
 2. **Install dependencies**:
     
     ```
-    shCopy code
     poetry install
     
     ```
@@ -51,7 +49,6 @@ base Fastapi project with mongodb as the database for RestAPI applications
 3. **Run the application**:
     
     ```
-    shCopy code
     poetry run uvicorn api.main:app --reload
     
     ```
