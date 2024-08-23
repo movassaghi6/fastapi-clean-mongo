@@ -108,9 +108,9 @@ This structure maintains a clean separation of concerns:
 
 ## ToDo:
 
-- [ ] complete Tests
+- [] complete Tests
 
-- [ ] implement Authentication
+- [x] implement Authentication
 
 - [ ] logging system
 
