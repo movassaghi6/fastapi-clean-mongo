@@ -30,3 +30,9 @@ UNIT_TEST = config("UNIT_TEST", cast=bool, default=False)
 DEPLOYMENT_ENV: str = config("DEPLOYMENT_ENV", default="local")
 ALLOWED_HOSTS: List[str] = config("ALLOWED_HOSTS", cast=CommaSeparatedStrings, default="*")
 AIO_CLIENT_TOUT_SEC: int = config("AIO_CLIENT_TOUT_SEC", cast=int, default=10)
+
+
+# =========== SECURITY ==========
+SECRET_KEY = config("SECRET_KEY")
+ALGORITHM = config("ALGORITHM")
+ACCESS_TOKEN_EXPIRE_MINUTES = config("ACCESS_TOKEN_EXPIRE_MINUTES", cast=int, default=15)

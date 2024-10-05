@@ -10,7 +10,7 @@ from app.model.user import PyObjectId
 from unittest import mock
 from pymongo import MongoClient
 from app.main import app  # Assuming app.main has your FastAPI app instance
-from app.schema.user import CreateUserResponse, CreateUserRequest
+from app.schema.user import User, CreateUserRequest
 from app.core.dependencies import create_user_dep, get_user
 from app.repository.user import UserRepository
 from app.core.dependencies import get_mongodb_repo, _get_mongo_client

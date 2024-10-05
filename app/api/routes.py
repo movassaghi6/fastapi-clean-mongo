@@ -1,18 +1,10 @@
-from fastapi import APIRouter, Request
-
-from app.api.endpoints import user as user_router
+from fastapi import APIRouter
+from api.endpoints import user as user_router
 
 
 
 router = APIRouter()
 
+
+# Include user-related routes under the /api/v1 prefix and tag them as 'USER V1'
 router.include_router(user_router.router, tags=['USER V1'], prefix='/api/v1')
-
-
-
-@router.get(
-    '/api/v1/hello',
-    name= 'probe:liveness'
-)
-def hello_world(request: Request):
-    return {'message': 'Hello World', 'root_path': request.scope.get('root_path')}

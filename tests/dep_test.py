@@ -1,4 +1,4 @@
-from app.schema.user import CreateUserResponse, CreateUserRequest, ListUsersResponse
+from app.schema.user import User, CreateUserRequest, ListUsersResponse
 from app.repository.user import UserRepository
 from app.core.config import MONGO_COLLECTION_USERS, MONGODB_URL, MONGO_DATABASE
 from app.core.dependencies import create_user, get_user, get_users
@@ -34,7 +34,7 @@ def test_create_user(create_user_fixture, mongo_client):
     # get the database from the mongo_client fixture
     db = mongo_client[MONGO_DATABASE]
 
-    created_user: CreateUserResponse= create_user_fixture(create_req = request)
+    created_user: User= create_user_fixture(create_req = request)
 
     assert created_user is not None
     assert created_user.name == "dsaf2"
@@ -47,9 +47,9 @@ def test_get_user(create_user_fixture,get_user_fixture, mongo_client):
 
     request= CreateUserRequest(email='sadfa2@dasf.com', name='dsafdsa', password='314543143d')
 
-    created_user: CreateUserResponse= create_user_fixture(create_req= request)
+    created_user: User= create_user_fixture(create_req= request)
 
-    get_user : CreateUserResponse = get_user_fixture(ID=created_user.user_id)
+    get_user : User = get_user_fixture(ID=created_user.user_id)
 
     assert get_user is not None
     assert get_user.name == "dsafdsa"
